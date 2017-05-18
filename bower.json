@@ -1,12 +1,12 @@
 {
-  "name": "template",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "wordpressPortfolio",
+  "homepage": "https://github.com/dandgerson/wordpressPortfolio",
   "authors": [
-    "dandgerson"
+    "dandgerson <dandgerson@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/dandgerson/template",
+  "description": "",
+  "main": "",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

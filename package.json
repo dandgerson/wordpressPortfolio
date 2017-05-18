@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "wordpress-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dandgerson/template.git"
+    "url": "git+https://github.com/dandgerson/wordpressPortfolio.git"
   },
-  "author": "dandgerson",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dandgerson/template/issues"
+    "url": "https://github.com/dandgerson/wordpressPortfolio/issues"
   },
-  "homepage": "https://github.com/dandgerson/template#readme",
+  "homepage": "https://github.com/dandgerson/wordpressPortfolio#readme",
   "devDependencies": {
     "browser-sync": "^2.18.7",
     "del": "^2.2.2",
@@ -30,6 +30,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.0.0",
+    "node-bourbon": "^4.2.8",
     "vinyl-ftp": "^0.6.0"
   }
 }

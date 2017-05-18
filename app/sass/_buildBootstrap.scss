@@ -27,18 +27,18 @@
 	Reset and dependencies
 	-------------------------------------------------------- */
 
-// @import "app/bower/bootstrap/scss/normalize";
-// @import "app/bower/bootstrap/scss/print";
+@import "app/bower/bootstrap/scss/normalize";
+@import "app/bower/bootstrap/scss/print";
 
 /* --------------------------------------------------------
 	Core CSS
 	-------------------------------------------------------- */
 
-//@import "app/bower/bootstrap/scss/reboot";
-//@import "app/bower/bootstrap/scss/type";
+@import "app/bower/bootstrap/scss/reboot";
+// @import "app/bower/bootstrap/scss/type";
 //@import "app/bower/bootstrap/scss/images";
 //@import "app/bower/bootstrap/scss/code";
-//@import "app/bower/bootstrap/scss/grid";
+@import "app/bower/bootstrap/scss/grid";
 //@import "app/bower/bootstrap/scss/tables";
 //@import "app/bower/bootstrap/scss/forms";
 //@import "app/bower/bootstrap/scss/buttons";
