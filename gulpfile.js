@@ -36,6 +36,12 @@ gulp.task('scripts', function() {
 		'app/bower/jquery/dist/jquery.js',
 		'app/bower/tether/dist/js/tether.js',
 		'app/bower/bootstrap/dist/js/bootstrap.js',
+		'app/bower/html5shiv/dist/html5shiv.js',
+		'app/bower/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/bower/mixitup/dist/mixitup.min.js',
+		'app/bower/parallax.js/parallax.min.js',
+		'app/bower/respond/dest/respond.min.js',
+		'app/bower/waypoints/lib/jquery.waypoints.min.js',
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

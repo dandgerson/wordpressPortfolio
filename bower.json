@@ -1,6 +1,6 @@
 {
-  "name": "wordpressPortfolio",
-  "homepage": "https://github.com/dandgerson/wordpressPortfolio",
+  "name": "wordpressportfolio",
+  "homepage": "https://github.com/dandgerson/wordpressportfolio",
   "authors": [
     "dandgerson <dandgerson@gmail.com>"
   ],
@@ -16,6 +16,15 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.6"
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "fontawesome#^4.7.0",
+    "html5shiv": "html5shiv-complete#^3.7.0",
+    "linea-io": "^1.0.0",
+    "magnific-popup": "^1.1.0",
+    "respond": "^1.4.2",
+    "animate.css": "^3.5.2",
+    "mixitup": "^3.1.11",
+    "parallax.js": "^1.4.2",
+    "waypoints": "^4.0.1"
   }
 }
