@@ -1,2 +1,14 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
+.hidden {
+	display: none;
+}
+
+section, .main-head {
+	position: relative;
+}
+
+.main-head {
+	min-height: 620px;
+
+}

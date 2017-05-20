@@ -2,20 +2,185 @@
 	Bourbon Mixins
 	-------------------------------------------------------- */
 /* --------------------------------------------------------
-	Fonts
+	_fonts.scss
 	-------------------------------------------------------- */
 /* --------------------------------------------------------
-	Sass Variables
+	_variables.scss
 	-------------------------------------------------------- */
 /* Hello, I'm here :) */
 /* --------------------------------------------------------
-	Settings
+	_functions.scss
 	-------------------------------------------------------- */
 /* --------------------------------------------------------
-	Base
+	_mixins.scss
 	-------------------------------------------------------- */
 /* --------------------------------------------------------
-	Media Queries
+	Theme
+	-------------------------------------------------------- */
+body {
+  color: #222;
+}
+
+a {
+  color: #FF6347;
+}
+
+p,
+body .main-footer,
+.s-about li {
+  color: #888;
+}
+
+.color-element {
+  color: #FF6347;
+}
+
+.color-bg {
+  background-color: #FF6347;
+}
+
+.color-border {
+  border-color: #FF6347;
+}
+
+.bg-light {
+  background-color: #FAFAFA;
+}
+
+.bg-dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.bg-dark .s-descr::after {
+  background-color: #fff;
+}
+
+.bg-dark a {
+  color: #fff;
+}
+
+.top-menu a:hover {
+  color: #FF6347;
+}
+
+.top-menu a {
+  letter-spacing: 4px;
+}
+
+.top-text p {
+  color: #FAFAFA;
+  letter-spacing: 5px;
+}
+
+.personal-header {
+  letter-spacing: 2px;
+}
+
+.s-descr {
+  letter-spacing: 4px;
+}
+
+.s-descr::after {
+  background-color: #222;
+}
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.s-about p:nth-child(even) {
+  color: #FF6347;
+}
+
+.resume-container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resume-item .year {
+  background-color: #FF6347;
+  color: #fff;
+}
+
+.resume-item .resume-description {
+  letter-spacing: 1px;
+}
+
+.s-portfolio li {
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.s-portfolio li.active {
+  color: #fff;
+  border-bottom: 1px solid #FF6347;
+}
+
+.portfolio-item .port-item-cont a {
+  border-color: #FF6347;
+  color: #FF6347;
+}
+
+.main-footer a {
+  color: #FF6347;
+}
+
+.contacts-icon {
+  color: #FF6347;
+}
+
+.text-danger {
+  color: #FF6347;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #FF6347;
+}
+
+form input,
+form textarea {
+  letter-spacing: 2px;
+}
+
+form button {
+  background-color: #FF6347;
+  letter-spacing: 2px;
+}
+
+form .form-group {
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.popup-content {
+  letter-spacing: 1px;
+}
+
+/* --------------------------------------------------------
+	_settings.scss
+	-------------------------------------------------------- */
+/* --------------------------------------------------------
+	_base.scss
+	-------------------------------------------------------- */
+.hidden {
+  display: none;
+}
+
+section, .main-head {
+  position: relative;
+}
+
+.main-head {
+  min-height: 620px;
+}
+
+/* --------------------------------------------------------
+	_media.scss
 	-------------------------------------------------------- */
 /*==========  Desktop First Method  ==========*/
 /* Extra Large Devices, Wide Screens */

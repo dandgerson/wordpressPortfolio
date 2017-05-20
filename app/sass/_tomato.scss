@@ -1,0 +1,179 @@
+@import "bourbon";
+
+$color: #FF6347;
+$text-color: #888;
+$main-color: #222;
+$bg-light: #FAFAFA;
+
+@mixin kerning($kerning) {
+	letter-spacing: $kerning + px;
+}
+
+body {
+	color: $main-color;
+}
+
+a {
+	color: $color;
+}
+
+p,
+body .main-footer,
+.s-about li {
+	color: $text-color;
+}
+
+.color-element {
+	color: $color;
+}
+
+.color-bg {
+	background-color: $color;
+}
+
+.color-border {
+	border-color: $color;
+}
+
+.bg-light {
+	background-color: $bg-light;
+}
+
+.bg-dark {
+	background-color: $main-color;
+	color: #fff;
+
+	.s-descr::after {
+		background-color: #fff;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.top-menu {
+	a:hover {
+		color: $color;
+	}
+
+	a {
+		@include kerning(4);
+	}
+}
+
+.top-text {
+	p {
+		color: $bg-light;
+
+		@include kerning(5);
+	}
+}
+
+.personal-header {
+	@include kerning(2);
+}
+
+.s-descr {
+	@include kerning(4);
+
+	&::after {
+		background-color: $main-color;
+	}
+}
+
+section {
+	h3 {
+		@include kerning(3);
+
+		color: $text-color;
+	}
+}
+
+.s-about {
+	p:nth-child(even) {
+		color: $color;
+	}
+}
+
+.resume-container {
+	h3 {
+		color: $main-color;
+
+		@include kerning(1);
+
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+
+.resume-item {
+	.year {
+		background-color: $color;
+		color: #fff;
+	}
+
+	.resume-description {
+		@include kerning(1);
+	}
+}
+
+.s-portfolio {
+	li {
+		color: $text-color;
+
+		@include kerning(2);
+	}
+
+	li.active {
+		color: #fff;
+		border-bottom: 1px solid $color;
+	}
+}
+
+.portfolio-item .port-item-cont {
+	a {
+		border-color: $color;
+		color: $color;
+	}
+}
+
+.main-footer a {
+	color: $color;
+}
+
+.contacts-icon {
+	color: $color;
+}
+
+.text-danger {
+	color: $color;
+}
+
+form {
+	input:focus,
+	textarea:focus {
+		border: 1px solid $color;
+	}
+
+	input,
+	textarea {
+		@include kerning(2);
+	}
+
+	button {
+		background-color: $color;
+
+		@include kerning(2);
+	}
+
+	.form-group {
+		@include kerning(2);
+
+		color: $text-color;
+	}
+}
+
+.popup-content {
+	@include kerning(1);
+}
