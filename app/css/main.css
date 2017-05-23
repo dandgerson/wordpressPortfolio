@@ -15,6 +15,9 @@
 	_mixins.scss
 	-------------------------------------------------------- */
 /* --------------------------------------------------------
+	_settings.scss
+	-------------------------------------------------------- */
+/* --------------------------------------------------------
 	Theme
 	-------------------------------------------------------- */
 body {
@@ -162,9 +165,6 @@ form .form-group {
 }
 
 /* --------------------------------------------------------
-	_settings.scss
-	-------------------------------------------------------- */
-/* --------------------------------------------------------
 	_base.scss
 	-------------------------------------------------------- */
 .hidden {
@@ -177,6 +177,34 @@ section, .main-head {
 
 .main-head {
   min-height: 620px;
+  background: transparent;
+}
+
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loader .loader-inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 120px;
+  width: 120px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
 }
 
 /* --------------------------------------------------------
