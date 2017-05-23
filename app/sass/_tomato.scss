@@ -177,3 +177,15 @@ form {
 .popup-content {
 	@include kerning(1);
 }
+
+svg {
+	path {
+		fill: $bg-light;
+	}
+}
+
+.sw-topper,
+.sw-footer,
+.sw-bottom {
+	background: $bg-light;
+}

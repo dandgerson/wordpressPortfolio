@@ -35,7 +35,7 @@
 	-------------------------------------------------------- */
 
 @import "app/bower/bootstrap/scss/reboot";
-// @import "app/bower/bootstrap/scss/type";
+@import "app/bower/bootstrap/scss/type";
 //@import "app/bower/bootstrap/scss/images";
 //@import "app/bower/bootstrap/scss/code";
 @import "app/bower/bootstrap/scss/grid";
@@ -61,7 +61,7 @@
 //@import "app/bower/bootstrap/scss/progress";
 //@import "app/bower/bootstrap/scss/media";
 //@import "app/bower/bootstrap/scss/list-group";
-//@import "app/bower/bootstrap/scss/responsive-embed";
+@import "app/bower/bootstrap/scss/responsive-embed";
 //@import "app/bower/bootstrap/scss/close";
 
 /* --------------------------------------------------------
@@ -77,7 +77,7 @@
 	Utility classes
 	-------------------------------------------------------- */
 
-//@import "app/bower/bootstrap/scss/utilities";
+@import "app/bower/bootstrap/scss/utilities";
 
 /* --------------------------------------------------------
 	Custom application specific styles
