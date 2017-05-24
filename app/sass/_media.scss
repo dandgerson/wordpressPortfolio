@@ -17,17 +17,103 @@
 
 /* Small Devices, Phones */
 @media only screen and (max-width : 576px) {
+	.sandwich {
+		right: 20px;
+		top: 25px;
+	}
+	.sw-topper,
+	.sw-bottom,
+	.sw-footer {
+		width: $sandwich-w * 0.9;
+		height: $sandwich-h * 0.9;
+	}
+	.sw-bottom {
+		top: $sandwich-h * 1.5;
+	}
+	.sw-footer {
+		top: $sandwich-h * 3;
+	}
 
+	.top-text{
+		h1 {
+			font-size: 2rem;
+			border: 2px solid #fff;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.sandwich {
+		right: 15px;
+		top: 20px;
+	}
+	.sw-topper,
+	.sw-bottom,
+	.sw-footer {
+		width: $sandwich-w * 0.7;
+		height: $sandwich-h * 0.7;
+	}
+	.sw-bottom {
+		top: $sandwich-h * 1.5;
+	}
+	.sw-footer {
+		top: $sandwich-h * 3;
+	}
 
+	.top-text{
+		h1 {
+			font-size: 1.6rem;
+			border: 2px solid #fff;
+			padding: 10px 20px;
+		}
+		p {
+			font-size: 0.7rem;
+		}
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.sandwich {
+		right: 10px;
+		top: 20px;
+	}
+	.sw-topper,
+	.sw-bottom,
+	.sw-footer {
+		width: $sandwich-w * 0.6;
+		height: $sandwich-h * 0.6;
+	}
+	.sw-bottom {
+		top: $sandwich-h * 1.3;
+	}
+	.sw-footer {
+		top: $sandwich-h * 2.6;
+	}
 
+	.sandwich.active .sw-topper {
+		top: 8px;
+	}
+
+	.sandwich.active .sw-bottom {
+		top: 5px;
+	}
+
+	.top-text{
+		h1 {
+			font-size: 1.4rem;
+			border: 2px solid #fff;
+			padding: 10px 20px;
+		}
+		p {
+			font-size: 0.7rem;
+		}
+	}
 }
 
 
@@ -35,7 +121,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	
 }
 
 /* Extra Small Devices, Phones */

@@ -13,7 +13,7 @@ $(document).ready(function(){
 	}
 
 	heightDetect();
-	
+
 	$(window).resize(function() {
 		heightDetect();
 	});
@@ -33,16 +33,25 @@ $(window).ready(function() {
 $(document).ready(function(){
 
 // sandwich button
-	$(".sandwich, .menu_item").click(function() {
+	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
 	});
+
+$(".menu-item").click(function() {
+	$(".top-menu").fadeOut(600);
+	$(".sandwich").toggleClass("active");
+})
 
 // toggle menu
 	$(".sandwich").click(function() {
 		if ($(".top-menu").is(":visible")) {
+			$(".top-text").removeClass("h-opacify");
 			$(".top-menu").fadeOut(600);
+			$(".top-menu li a").removeClass("fadeInUp animated");
 			} else {
+				$(".top-text").addClass("h-opacify");
 				$(".top-menu").fadeIn(600);
+				$(".top-menu li a").addClass("fadeInUp animated");
 			};
 	});
 

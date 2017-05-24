@@ -270,6 +270,9 @@ section, .main-head {
   width: 50px;
   height: 40px;
   z-index: 100;
+  position: fixed;
+  right: 40px;
+  top: 40px;
 }
 
 .sw-topper {
@@ -346,8 +349,9 @@ section, .main-head {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   display: none;
+  z-index: 50;
 }
 
 .top-menu nav {
@@ -378,16 +382,57 @@ section, .main-head {
   margin: 0;
 }
 
-.top-menu nav ul a,
-.top-menu nav li a {
+.top-menu nav a {
   display: block;
   padding-bottom: 5px;
   font-size: 1.2rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.top-menu nav ul a:hover,
-.top-menu nav li a:hover {
+.top-menu nav a:hover {
   text-decoration: none;
+}
+
+.top-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-wrapper .top-descr {
+  display: table-row;
+}
+
+.top-wrapper .top-descr .top-centered {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-text {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.top-text h1 {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1000px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1000px;
+}
+
+.h-opacify {
+  opacity: 0.4;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 /* --------------------------------------------------------
@@ -398,8 +443,94 @@ section, .main-head {
 /* Large Devices, Desktops */
 /* Medium Devices, Tablets */
 /* Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .sandwich {
+    right: 20px;
+    top: 25px;
+  }
+  .sw-topper,
+  .sw-bottom,
+  .sw-footer {
+    width: 45px;
+    height: 4.5px;
+  }
+  .sw-bottom {
+    top: 7.5px;
+  }
+  .sw-footer {
+    top: 15px;
+  }
+  .top-text h1 {
+    font-size: 2rem;
+    border: 2px solid #fff;
+  }
+  .top-text p {
+    font-size: 0.8rem;
+  }
+}
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .sandwich {
+    right: 15px;
+    top: 20px;
+  }
+  .sw-topper,
+  .sw-bottom,
+  .sw-footer {
+    width: 35px;
+    height: 3.5px;
+  }
+  .sw-bottom {
+    top: 7.5px;
+  }
+  .sw-footer {
+    top: 15px;
+  }
+  .top-text h1 {
+    font-size: 1.6rem;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+  }
+  .top-text p {
+    font-size: 0.7rem;
+  }
+}
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .sandwich {
+    right: 10px;
+    top: 20px;
+  }
+  .sw-topper,
+  .sw-bottom,
+  .sw-footer {
+    width: 30px;
+    height: 3px;
+  }
+  .sw-bottom {
+    top: 6.5px;
+  }
+  .sw-footer {
+    top: 13px;
+  }
+  .sandwich.active .sw-topper {
+    top: 8px;
+  }
+  .sandwich.active .sw-bottom {
+    top: 5px;
+  }
+  .top-text h1 {
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+  }
+  .top-text p {
+    font-size: 0.7rem;
+  }
+}
+
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */

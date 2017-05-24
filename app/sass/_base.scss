@@ -67,21 +67,23 @@ section, .main-head {
 
 }
 
-$w: 50px;
-$h: 5px;
+$sandwich-w: 50px;
+$sandwich-h: 5px;
 
 .sandwich {
-
 	width: 50px;
 	height: 40px;
 	z-index: 100;
+	position: fixed;
+	right: 40px;
+	top: 40px;
 }
 
 .sw-topper {
 	position: relative;
-	top: $h * 0;
-	width: $w;
-	height: $h;
+	top: $sandwich-h * 0;
+	width: $sandwich-w;
+	height: $sandwich-h;
 	border: none;
 	border-radius: 4px 4px 4px 4px;
 	transition: transform 0.5s, top 0.2s;
@@ -90,9 +92,9 @@ $h: 5px;
 
 .sw-bottom {
 	position: relative;
-	width: $w;
-	height: $h;
-	top: $h * 2;
+	width: $sandwich-w;
+	height: $sandwich-h;
+	top: $sandwich-h * 2;
 	border: none;
 	border-radius: 4px 4px 4px 4px;
 	transition: transform 0.5s, top 0.2s;
@@ -101,9 +103,9 @@ $h: 5px;
 
 .sw-footer {
 	position: relative;
-	width: $w;
-	height: $h;
-	top: $h * 4;
+	width: $sandwich-w;
+	height: $sandwich-h;
+	top: $sandwich-h * 4;
 	border: none;
 	border-radius: 4px 4px 4px 4px;
 	transition: all 0.5s;
@@ -132,8 +134,9 @@ $h: 5px;
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.85);
 	display: none;
+	z-index: 50;
 	nav {
 		display: flex;
 		flex-flow: row nowrap;
@@ -145,15 +148,50 @@ $h: 5px;
 			list-style: none;
 			padding: 0;
 			margin: 0;
-			a {
-				display: block;
-				padding-bottom: 5px;
-				font-size: 1.2rem;
-				&:hover {
+		}
+		a {
+			display: block;
+			padding-bottom: 5px;
+			font-size: 1.2rem;
+			transition: all .5s;
+			&:hover {
 					text-decoration: none;
-				}
 			}
 		}
 	}
-	
+}
+
+.top-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	.top-descr {
+		display: table-row;
+		.top-centered {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+.top-text {
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	h1 {
+		display: inline-block;
+		padding: 10px 30px;
+		color: #fff;
+		border: 3px solid #fff;
+		background-color: rgba(0,0,0,.5);
+		box-shadow: rgba(0,0,0,.4) 0 0 0 1000px;
+	}
+}
+
+.h-opacify {
+	opacity: 0.4;
+	transition: all .5s;
 }
