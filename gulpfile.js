@@ -110,8 +110,8 @@ gulp.task('deploy', function() {
 	'dist/**'
 	];
 	return gulp.src( globs, {base: 'dist/', buffer: false } )
-		.pipe( conn.newer( './public_html/' ) )
-		.pipe( conn.dest( './public_html/' ) ); 
+		.pipe( conn.newer( './' ) )
+		.pipe( conn.dest( './' ) ); 
 });
 
 gulp.task('clear', function () {

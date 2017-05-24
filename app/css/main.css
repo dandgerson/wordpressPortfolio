@@ -185,6 +185,38 @@ section, .main-head {
   position: relative;
 }
 
+section {
+  padding: 70px 0 90px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+.s-descr-wrap {
+  text-align: center;
+}
+
+.s-descr-wrap .s-descr {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 130px;
+}
+
+.s-descr-wrap .s-descr::after {
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: 60px;
+  position: absolute;
+  width: 150px;
+}
+
 .main-head {
   min-height: 620px;
   background: transparent;
@@ -263,16 +295,20 @@ section, .main-head {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  z-index: 100;
+  width: 60px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .sandwich {
   width: 50px;
-  height: 40px;
-  z-index: 100;
-  position: fixed;
-  right: 40px;
-  top: 40px;
+  height: 35px;
 }
 
 .sw-topper {
@@ -322,14 +358,14 @@ section, .main-head {
 }
 
 .sandwich.active .sw-topper {
-  top: 10px;
+  top: 15px;
   -webkit-transform: rotate(140deg);
       -ms-transform: rotate(140deg);
           transform: rotate(140deg);
 }
 
 .sandwich.active .sw-bottom {
-  top: 5px;
+  top: 10px;
   -webkit-transform: rotate(-140deg);
       -ms-transform: rotate(-140deg);
           transform: rotate(-140deg);
@@ -385,7 +421,7 @@ section, .main-head {
 .top-menu nav a {
   display: block;
   padding-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -435,6 +471,11 @@ section, .main-head {
   transition: all .5s;
 }
 
+.main-footer {
+  padding: 50px 0;
+  font-size: .9rem;
+}
+
 /* --------------------------------------------------------
 	_media.scss
 	-------------------------------------------------------- */
@@ -444,9 +485,9 @@ section, .main-head {
 /* Medium Devices, Tablets */
 /* Small Devices, Phones */
 @media only screen and (max-width: 576px) {
-  .sandwich {
-    right: 20px;
-    top: 25px;
+  .toggle-menu {
+    width: 45px;
+    height: 35px;
   }
   .sw-topper,
   .sw-bottom,
@@ -471,9 +512,9 @@ section, .main-head {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .sandwich {
-    right: 15px;
-    top: 20px;
+  .toggle-menu {
+    width: 35px;
+    height: 35px;
   }
   .sw-topper,
   .sw-bottom,
@@ -499,9 +540,9 @@ section, .main-head {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  .sandwich {
-    right: 10px;
-    top: 20px;
+  .toggle-menu {
+    width: 35px;
+    height: 35px;
   }
   .sw-topper,
   .sw-bottom,
@@ -514,6 +555,12 @@ section, .main-head {
   }
   .sw-footer {
     top: 13px;
+  }
+  .toggle-menu {
+    right: 20px;
+    top: 40px;
+    width: 50px;
+    height: 55px;
   }
   .sandwich.active .sw-topper {
     top: 8px;

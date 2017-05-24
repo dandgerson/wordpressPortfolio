@@ -8,6 +8,35 @@ section, .main-head {
 	position: relative;
 }
 
+section {
+	padding: 70px 0 90px;
+	h2 {
+		text-align: center;
+		font-size: 2rem;
+		text-transform: uppercase;
+		margin: 0 0 15px;
+	}
+}
+
+.s-descr-wrap {
+	text-align: center;
+	.s-descr {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		margin-bottom: 130px;
+		&::after {
+			content: "";
+			height: 1px;
+			left: 50%;
+			margin-left: -75px;
+			margin-top: 60px;
+			position: absolute;
+			width: 150px;
+		}
+	}
+}
+
 .main-head {
 	min-height: 620px;
 	background: transparent;
@@ -54,17 +83,21 @@ section, .main-head {
 	}
 }
 
-
-
-// Toggle menu
+// sandwich
 
 .toggle-menu {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	height: 120px;
-
+	position: fixed;
+	right: 20px;
+	top: 40px;
+	z-index: 100;
+	width: 60px;
+	height: 55px;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 10px;
 }
 
 $sandwich-w: 50px;
@@ -72,11 +105,9 @@ $sandwich-h: 5px;
 
 .sandwich {
 	width: 50px;
-	height: 40px;
-	z-index: 100;
-	position: fixed;
-	right: 40px;
-	top: 40px;
+	height: 35px;
+	
+	
 }
 
 .sw-topper {
@@ -113,12 +144,12 @@ $sandwich-h: 5px;
 }
 
 .sandwich.active .sw-topper {
-	top: 10px;
+	top: 15px;
 	transform: rotate(140deg);
 }
 
 .sandwich.active .sw-bottom {
-	top: 5px;
+	top: 10px;
 	transform: rotate(-140deg);
 }
 
@@ -152,7 +183,7 @@ $sandwich-h: 5px;
 		a {
 			display: block;
 			padding-bottom: 5px;
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 			transition: all .5s;
 			&:hover {
 					text-decoration: none;
@@ -194,4 +225,10 @@ $sandwich-h: 5px;
 .h-opacify {
 	opacity: 0.4;
 	transition: all .5s;
+}
+
+.main-footer {
+	padding: 50px 0;
+	font-size: .9rem;
+
 }

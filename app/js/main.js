@@ -42,7 +42,7 @@ $(".menu-item").click(function() {
 	$(".sandwich").toggleClass("active");
 })
 
-// toggle menu
+// sandwich
 	$(".sandwich").click(function() {
 		if ($(".top-menu").is(":visible")) {
 			$(".top-text").removeClass("h-opacify");

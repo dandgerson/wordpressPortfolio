@@ -17,9 +17,9 @@
 
 /* Small Devices, Phones */
 @media only screen and (max-width : 576px) {
-	.sandwich {
-		right: 20px;
-		top: 25px;
+	.toggle-menu {
+		width: 45px;
+		height: 35px;
 	}
 	.sw-topper,
 	.sw-bottom,
@@ -48,10 +48,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.sandwich {
-		right: 15px;
-		top: 20px;
+	.toggle-menu {
+		width: 35px;
+		height: 35px;
 	}
+
+
 	.sw-topper,
 	.sw-bottom,
 	.sw-footer {
@@ -79,10 +81,11 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-	.sandwich {
-		right: 10px;
-		top: 20px;
+	.toggle-menu {
+		width: 35px;
+		height: 35px;
 	}
+
 	.sw-topper,
 	.sw-bottom,
 	.sw-footer {
@@ -94,6 +97,13 @@
 	}
 	.sw-footer {
 		top: $sandwich-h * 2.6;
+	}
+
+	.toggle-menu {
+		right: 20px;
+		top: 40px;
+		width: 50px;
+		height: 55px;
 	}
 
 	.sandwich.active .sw-topper {
