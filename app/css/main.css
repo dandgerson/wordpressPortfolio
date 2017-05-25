@@ -251,24 +251,11 @@ section h2 {
 }
 
 .logo-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 120px;
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  z-index: 100;
 }
 
 .logo-container svg {
@@ -461,8 +448,8 @@ section h2 {
   color: #fff;
   border: 3px solid #fff;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1000px;
-          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1000px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
 }
 
 .h-opacify {
@@ -486,20 +473,30 @@ section h2 {
 /* Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .toggle-menu {
-    width: 45px;
-    height: 35px;
+    width: 50px;
+    height: 45px;
+  }
+  .sandwich {
+    padding-top: 2.5px;
   }
   .sw-topper,
   .sw-bottom,
   .sw-footer {
     width: 45px;
     height: 4.5px;
+    left: 2px;
   }
   .sw-bottom {
     top: 7.5px;
   }
   .sw-footer {
     top: 15px;
+  }
+  .sandwich.active .sw-topper {
+    top: 12px;
+  }
+  .sandwich.active .sw-bottom {
+    top: 9px;
   }
   .top-text h1 {
     font-size: 2rem;
@@ -513,20 +510,30 @@ section h2 {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .toggle-menu {
-    width: 35px;
-    height: 35px;
+    width: 49px;
+    height: 40px;
+  }
+  .sandwich {
+    padding-top: 4px;
   }
   .sw-topper,
   .sw-bottom,
   .sw-footer {
     width: 35px;
     height: 3.5px;
+    left: 7px;
   }
   .sw-bottom {
     top: 7.5px;
   }
   .sw-footer {
     top: 15px;
+  }
+  .sandwich.active .sw-topper {
+    top: 10px;
+  }
+  .sandwich.active .sw-bottom {
+    top: 7px;
   }
   .top-text h1 {
     font-size: 1.6rem;
@@ -541,26 +548,26 @@ section h2 {
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .toggle-menu {
-    width: 35px;
+    width: 40px;
     height: 35px;
+    top: 10px;
+    right: 10px;
+  }
+  .sandwich {
+    padding-top: 6px;
   }
   .sw-topper,
   .sw-bottom,
   .sw-footer {
     width: 30px;
     height: 3px;
+    left: 5px;
   }
   .sw-bottom {
     top: 6.5px;
   }
   .sw-footer {
     top: 13px;
-  }
-  .toggle-menu {
-    right: 20px;
-    top: 40px;
-    width: 50px;
-    height: 55px;
   }
   .sandwich.active .sw-topper {
     top: 8px;

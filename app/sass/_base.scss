@@ -71,11 +71,11 @@ section {
 }
 
 .logo-container {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
 	height: 120px;
+	position: absolute;
+	left: 20px;
+	top: 28px;
+	z-index: 100;
 	svg {
 		height: 120px;
 		width: 120px;
@@ -218,7 +218,7 @@ $sandwich-h: 5px;
 		color: #fff;
 		border: 3px solid #fff;
 		background-color: rgba(0,0,0,.5);
-		box-shadow: rgba(0,0,0,.4) 0 0 0 1000px;
+		box-shadow: rgba(0,0,0,.4) 0 0 0 900px;
 	}
 }
 
