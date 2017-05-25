@@ -245,8 +245,8 @@ section h2 {
   width: 120px;
   margin-top: -30px;
   margin-left: -30px;
-  left: 50%;
-  top: 50%;
+  left: 47%;
+  top: 40%;
   position: absolute;
 }
 
@@ -440,6 +440,9 @@ section h2 {
   display: inline-block;
   margin-right: 20px;
   margin-left: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .top-text h1 {
@@ -447,9 +450,7 @@ section h2 {
   padding: 10px 30px;
   color: #fff;
   border: 3px solid #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
-          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .h-opacify {
