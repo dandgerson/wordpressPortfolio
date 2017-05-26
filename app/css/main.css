@@ -196,6 +196,15 @@ section h2 {
   margin: 0 0 15px;
 }
 
+section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
 .s-descr-wrap {
   text-align: center;
 }
@@ -405,6 +414,31 @@ section h2 {
   margin: 0;
 }
 
+.top-menu nav li:nth-child(1) a {
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+}
+
+.top-menu nav li:nth-child(2) a {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.top-menu nav li:nth-child(3) a {
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+}
+
+.top-menu nav li:nth-child(4) a {
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+}
+
+.top-menu nav li:nth-child(5) a {
+  -webkit-animation-duration: 2.7s;
+          animation-duration: 2.7s;
+}
+
 .top-menu nav a {
   display: block;
   padding-bottom: 5px;
@@ -462,6 +496,50 @@ section h2 {
 .main-footer {
   padding: 50px 0;
   font-size: .9rem;
+}
+
+.s-about .section-content h2 {
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.s-about p {
+  margin-bottom: 25px;
+}
+
+.s-about ul,
+.s-about li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.s-about li {
+  margin-bottom: 10px;
+}
+
+.s-about .social-wrap {
+  margin-top: 25px;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  max-width: 220px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.social-wrap li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 3px;
 }
 
 /* --------------------------------------------------------

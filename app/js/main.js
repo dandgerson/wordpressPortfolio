@@ -9,31 +9,33 @@ $(document).ready(function () {
 
 $(document).ready(function(){
 
-	$(".top-text h1").addClass("animated fadeInDown");
-	$(".top-text p").addClass("animated fadeInUp");
+	$(".section-header").animated("fadeInUp", "fadeOutDown");
 
-	$(".top-text h1").css("animation-delay","1s");
-	$(".top-text p").css("animation-delay","1.8s");
+	// $(".top-text h1").addClass("animated fadeInDown");
+	// $(".top-text p").addClass("animated fadeInUp");
 
-	$(".section-header").addClass("animated");
-	// hide our element on page load
-	$('.section-header').css('opacity', 0);
+	// $(".top-text h1").css("animation-delay","1s");
+	// $(".top-text p").css("animation-delay","1.8s");
+
+	// $(".section-header").addClass("animated");
+	// // hide our element on page load
+	// $('.section-header').css('opacity', 0);
  
-	$('#s-header-about').waypoint(function() {
-			$('#s-header-about').addClass('fadeInUp');
-	}, { offset: '70%' });
+	// $('#s-header-about').waypoint(function() {
+	// 		$('#s-header-about').addClass('fadeInUp');
+	// }, { offset: '80%' });
 
-	$('#s-header-resume').waypoint(function() {
-			$('#s-header-resume').addClass('fadeInUp');
-	}, { offset: '70%' });
+	// $('#s-header-resume').waypoint(function() {
+	// 		$('#s-header-resume').addClass('fadeInUp');
+	// }, { offset: '80%' });
 
-	$('#s-header-portfolio').waypoint(function() {
-			$('#s-header-portfolio').addClass('fadeInUp');
-	}, { offset: '70%' });
+	// $('#s-header-portfolio').waypoint(function() {
+	// 		$('#s-header-portfolio').addClass('fadeInUp');
+	// }, { offset: '80%' });
 
-	$('#s-header-contacts').waypoint(function() {
-			$('#s-header-contacts').addClass('fadeInUp');
-	}, { offset: '70%' });
+	// $('#s-header-contacts').waypoint(function() {
+	// 		$('#s-header-contacts').addClass('fadeInUp');
+	// }, { offset: '80%' });
  
 });
 
@@ -88,9 +90,10 @@ $(".menu-item").click(function() {
 				$(".top-menu li a").addClass("fadeInUp animated");
 			};
 	});
+});
 
+// Magnific popup
 
-
-
-
+$(document).ready(function() {
+  $(".popup").magnificPopup({type:"image"});
 });
