@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$(".h-about").animated("fadeInUp", "fadeOutDown");
 
 	$(".animation-about-1").animated("flipInY", "flipOutY");
-	$(".animation-about-1").css("animation-delay","1s");
+	$(".animation-about-1").css("animation-delay",".8s");
 	$(".animation-about-2").animated("fadeInLeft", "fadeOut");
 	$(".animation-about-3").animated("fadeInRight", "fadeOut");
 	$(".h-resume").animated("fadeInUp", "fadeOutDown");
