@@ -25,12 +25,23 @@ $(document).ready(function(){
 	$(".animation-about-1").css("animation-delay",".8s");
 	$(".animation-about-2").animated("fadeInLeft", "fadeOut");
 	$(".animation-about-3").animated("fadeInRight", "fadeOut");
-	$(".h-resume").animated("fadeInUp", "fadeOutDown");
+	
 	$(".h-portfolio").animated("fadeInUp", "fadeOutDown");
 	$(".h-contacts").animated("fadeInUp", "fadeOutDown");
 
+	// resume
+	$(".h-resume").animated("fadeInUp", "fadeOut");
+	$(".l-ri-1").animated("fadeInLeft", "fadeOut");
+	$(".l-ri-2").animated("fadeInLeft", "fadeOut");
+	$(".l-ri-3").animated("fadeInLeft", "fadeOut");
+	$(".l-ri-4").animated("fadeInLeft", "fadeOut");
 	
+	$(".r-ri-1").animated("fadeInRight", "fadeOut");
+	$(".r-ri-2").animated("fadeInRight", "fadeOut");
+	$(".r-ri-3").animated("fadeInRight", "fadeOut");
+	$(".r-ri-4").animated("fadeInRight", "fadeOut");
 
+	$(".resume-item").css("animation-delay",".8s");
 });
 // Resize header
 
@@ -68,9 +79,10 @@ $(".sandwich").click(function() {
 $(".menu-item").click(function() {
 	$(".top-menu").fadeOut(600);
 	$(".sandwich").toggleClass("active");
-})
+});
 
 // sandwich
+
 $(".sandwich").click(function() {
 	if ($(".top-menu").is(":visible")) {
 		$(".top-text").removeClass("h-opacify");
@@ -82,6 +94,10 @@ $(".sandwich").click(function() {
 		$(".top-menu li a").addClass("fadeInUp animated");
 	};
 });
+
+$(".top-menu ul a").click(function() {
+	$(".top-text").removeClass("h-opacify");
+});﻿
 });
 
 // Magnific popup

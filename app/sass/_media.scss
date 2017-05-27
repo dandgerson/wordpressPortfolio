@@ -104,6 +104,20 @@
 			font-size: 0.7rem;
 		}
 	}
+
+	.resume-container h3 {
+		margin:10px 0 20px 0; 
+	}
+	.resume-icon {
+		margin-bottom: 15px;
+	}
+	.resume-description {
+		font-size: 0.6rem;
+	}
+	.resume-item p {
+		font-size: 0.7rem;
+	}
+
 }
 
 /* Custom, iPhone Retina */
@@ -152,6 +166,20 @@
 			font-size: 0.7rem;
 		}
 	}
+
+	.resume-container h3 {
+		margin:0 0 10px 0; 
+	}
+	.resume-icon {
+		margin-bottom: 10px;
+	}
+	.resume-description {
+		font-size: .5rem;
+	}
+	.resume-item p {
+		font-size: .5rem;
+	}
+
 }
 
 

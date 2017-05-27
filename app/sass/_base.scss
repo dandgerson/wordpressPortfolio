@@ -1,5 +1,9 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
+body {
+	overflow-x: hidden;
+}
+
 .hidden {
 	display: none;
 }
@@ -118,8 +122,6 @@ $sandwich-h: 5px;
 .sandwich {
 	width: 50px;
 	height: 35px;
-	
-	
 }
 
 .sw-topper {
@@ -215,7 +217,7 @@ $sandwich-h: 5px;
 			font-size: 1.5rem;
 			transition: all .5s;
 			&:hover {
-					text-decoration: none;
+				text-decoration: none;
 			}
 		}
 	}
@@ -268,18 +270,18 @@ $sandwich-h: 5px;
 .content-item {
 	margin-bottom: 60px;
 }
-.last-content-item {
+.content-item-last {
 	margin-bottom: 0;
 }
 
 .s-about {
 	.section-content {
 		h2{
-		font-size: 13px;
-		text-align: left;
-		@include kerning(2);
-		margin-bottom: 30px;
-		color: #555;
+			font-size: 13px;
+			text-align: left;
+			@include kerning(2);
+			margin-bottom: 30px;
+			color: #555;
 		}
 	}
 	
@@ -316,4 +318,60 @@ $sandwich-h: 5px;
 		padding: 0 3px;
 	}
 }
+
+.resume-container {
+	h3 {
+		margin-top: 30px;
+	}
+	.left {
+		text-align: right;
+		padding-right: 15px;
+		border-right: 1px solid #999;
+		.resume-description strong {
+			margin-left: 10px;
+		}
+		h3 {
+			text-align: right;
+		}
+	}
+	.right {
+		text-align: left;
+		padding-left: 15px;
+		.resume-description strong {
+			margin-right: 10px;
+		}
+		h3 {
+			text-align: left;
+		}
+	}
+}
+
+.resume-icon {
+	font-size: 3rem;
+	margin-bottom: 35px;
+}
+
+.resume-item {
+	margin-bottom: 30px;
+	p {
+		margin-top: 10px;
+	}
+	.year {
+		display: inline-block;
+		padding: 0 10px;
+		margin-bottom: 1rem;
+		color: #fff;
+		font-weight: 400;
+		font-style: italic;
+	}
+	.resume-description {
+		font-style: italic;
+		strong {
+			font-weight: 700;
+			font-style: normal;
+			text-transform: uppercase;
+		}
+	}
+}
+
 
