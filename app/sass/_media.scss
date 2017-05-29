@@ -2,17 +2,59 @@
 
 /* Extra Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.portfolio-item {
+		.port-item-cont {
+			padding-top: 16%;
+		}
+	}
+	.port-descr {
+		width: 90%;
+		.mfp-close {
+			right: 35px;
+			top: -25px;
+			color: $bg-light;
+		}
+	}
 }
 
 /* Large Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.portfolio-item {
+		.port-item-cont {
+			padding-top: 8%;
+		}
+	}
+	.port-descr {
+		width: 90%;
+		.mfp-close {
+			right: 30px;
+			top: -17px;
+			color: $bg-light;
+		}
+	}
 }
 
 /* Medium Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.portfolio-item {
+		.port-item-cont {
+			padding-top: 10%;
+		}
+	}
+	.port-descr {
+		width: 90%;
+		.mfp-close {
+			right: 30px;
+			top: -17px;
+			color: $bg-light;
+		}
+	}
 
+	.main-footer {
+		.social-wrap li {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 /* Small Devices, Phones */
@@ -57,6 +99,25 @@
 
 		p {
 			font-size: 0.8rem;
+		}
+	}
+	.portfolio-item {
+		.port-item-cont {
+			padding-top: 20%;
+		}
+	}
+	.port-descr {
+		width: 100%;
+		.mfp-close {
+			right: 0px;
+			top: -25px;
+			color: $bg-light;
+		}
+	}
+
+	.main-footer {
+		.social-wrap li {
+			margin-bottom: 0.5rem;
 		}
 	}
 }
@@ -118,6 +179,37 @@
 		font-size: 0.7rem;
 	}
 
+.portfolio-item {
+		.port-item-cont {
+			padding-top: 10%;
+		}
+
+		h3 {
+			color: $bg-light;;
+			margin-bottom: 3px;
+		}
+		p {
+			margin-bottom: 6px;
+		}
+		a {
+			padding: 0.3rem 1.4rem;
+		}
+
+	}
+
+	.port-descr {
+		width: 100%;
+		.mfp-close {
+			right: -15px;
+			top: -25px;
+			color: $bg-light;
+		}
+	}
+	.main-footer {
+		.social-wrap li {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -180,6 +272,39 @@
 		font-size: .5rem;
 	}
 
+	.main-footer {
+		.social-wrap li {
+			margin-bottom: 0.5rem;
+		}
+	}
+	
+	.port-descr {
+		width: 100%;
+		.mfp-close {
+			right: -15px;
+			top: -20px;
+			color: $bg-light;
+		}
+	}
+
+	.portfolio-item {
+		.port-item-cont {
+			padding-top: 8%;
+		}
+
+		h3 {
+			color: $bg-light;;
+			margin-bottom: 3px;
+		}
+		p {
+			margin-bottom: 6px;
+		}
+		a {
+			padding: 0.3rem 1.4rem;
+		}
+
+	}
+
 }
 
 
@@ -202,9 +327,7 @@
 
 /* Medium Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.content-item {
-		margin-bottom: 0;
-	}
+	
 }
 
 /* Large Devices, Desktops */

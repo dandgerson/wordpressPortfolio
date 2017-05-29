@@ -5,6 +5,21 @@ $(document).ready(function () {
 });
 
 
+// Portfolio
+
+$(document).ready(function () {
+
+	$(".s-portfolio li").click(function() {
+		$(".s-portfolio li").removeClass('active');
+		$(this).addClass('active');
+	});
+
+// mixitup
+	var containerEl = document.querySelector('.p-container');
+	var mixer = mixitup(containerEl);
+
+});
+
 // Animate + Waypoint
 
 $(document).ready(function(){
@@ -104,4 +119,17 @@ $(".top-menu ul a").click(function() {
 
 $(document).ready(function() {
 	$(".popup").magnificPopup({type:"image"});
+	$(".popup-content").magnificPopup({
+		type: "inline",
+		midClick: true
+	});
+});
+
+$(document).ready(function(){
+
+	$(".portfolio-item").each(function(i) {
+		$(this).find("a").attr("href", "#work-" + i);
+		$(this).find(".port-descr").attr("id", "work-" + i);
+	});
+
 });

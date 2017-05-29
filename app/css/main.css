@@ -187,6 +187,12 @@ body {
   overflow-x: hidden;
 }
 
+body img:focus,
+body a:focus,
+body input:focus {
+  outline: none;
+}
+
 .hidden {
   display: none;
 }
@@ -566,10 +572,17 @@ section h3 {
           border-radius: 50%;
 }
 
-.social-wrap li {
+.social-wrap ul {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.social-wrap ul li {
   display: inline-block;
   font-size: 20px;
   padding: 0 3px;
+  margin: 0;
 }
 
 .resume-container h3 {
@@ -635,13 +648,181 @@ section h3 {
   text-transform: uppercase;
 }
 
+.s-portfolio ul,
+.s-portfolio li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.s-portfolio ul {
+  margin-bottom: 50px;
+}
+
+.s-portfolio li {
+  display: inline-block;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  line-height: 2;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-item .port-item-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  padding-top: 3.5rem;
+  opacity: 0;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.portfolio-item .port-item-cont:hover {
+  opacity: 1;
+}
+
+.portfolio-item h3 {
+  color: #FAFAFA;
+  margin-bottom: 0.4rem;
+}
+
+.portfolio-item a {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 0.4rem 1.4rem;
+  text-decoration: none;
+}
+
+.portfolio-item a:hover {
+  color: #FAFAFA;
+  border-color: #FAFAFA;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.port-descr {
+  background-color: #FAFAFA;
+  width: 70%;
+  margin: auto;
+}
+
+.port-descr p,
+.port-descr h3 {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.port-descr h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.port-descr p {
+  margin-top: 0;
+  color: #222;
+}
+
+.port-descr img {
+  width: 100%;
+}
+
+.port-descr .mfp-content img {
+  text-align: center;
+}
+
+.port-descr .mfp-close {
+  right: 150px;
+  color: #FAFAFA;
+}
+
+.port-img-container {
+  text-align: center;
+}
+
+.main-footer .social-wrap {
+  line-height: 0;
+}
+
+.main-footer .social-wrap ul {
+  margin: 0;
+  cursor: pointer;
+}
+
+.main-footer .social-wrap a {
+  display: block;
+}
+
+.main-footer .social-wrap a:hover {
+  color: #FAFAFA;
+}
+
 /* --------------------------------------------------------
 	_media.scss
 	-------------------------------------------------------- */
 /*==========  Desktop First Method  ==========*/
 /* Extra Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .portfolio-item .port-item-cont {
+    padding-top: 16%;
+  }
+  .port-descr {
+    width: 90%;
+  }
+  .port-descr .mfp-close {
+    right: 35px;
+    top: -25px;
+    color: #FAFAFA;
+  }
+}
+
 /* Large Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .portfolio-item .port-item-cont {
+    padding-top: 8%;
+  }
+  .port-descr {
+    width: 90%;
+  }
+  .port-descr .mfp-close {
+    right: 30px;
+    top: -17px;
+    color: #FAFAFA;
+  }
+}
+
 /* Medium Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .portfolio-item .port-item-cont {
+    padding-top: 10%;
+  }
+  .port-descr {
+    width: 90%;
+  }
+  .port-descr .mfp-close {
+    right: 30px;
+    top: -17px;
+    color: #FAFAFA;
+  }
+  .main-footer .social-wrap li {
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .toggle-menu {
@@ -676,6 +857,20 @@ section h3 {
   }
   .top-text p {
     font-size: 0.8rem;
+  }
+  .portfolio-item .port-item-cont {
+    padding-top: 20%;
+  }
+  .port-descr {
+    width: 100%;
+  }
+  .port-descr .mfp-close {
+    right: 0px;
+    top: -25px;
+    color: #FAFAFA;
+  }
+  .main-footer .social-wrap li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -726,6 +921,30 @@ section h3 {
   }
   .resume-item p {
     font-size: 0.7rem;
+  }
+  .portfolio-item .port-item-cont {
+    padding-top: 10%;
+  }
+  .portfolio-item h3 {
+    color: #FAFAFA;
+    margin-bottom: 3px;
+  }
+  .portfolio-item p {
+    margin-bottom: 6px;
+  }
+  .portfolio-item a {
+    padding: 0.3rem 1.4rem;
+  }
+  .port-descr {
+    width: 100%;
+  }
+  .port-descr .mfp-close {
+    right: -15px;
+    top: -25px;
+    color: #FAFAFA;
+  }
+  .main-footer .social-wrap li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -779,6 +998,30 @@ section h3 {
   .resume-item p {
     font-size: .5rem;
   }
+  .main-footer .social-wrap li {
+    margin-bottom: 0.5rem;
+  }
+  .port-descr {
+    width: 100%;
+  }
+  .port-descr .mfp-close {
+    right: -15px;
+    top: -20px;
+    color: #FAFAFA;
+  }
+  .portfolio-item .port-item-cont {
+    padding-top: 8%;
+  }
+  .portfolio-item h3 {
+    color: #FAFAFA;
+    margin-bottom: 3px;
+  }
+  .portfolio-item p {
+    margin-bottom: 6px;
+  }
+  .portfolio-item a {
+    padding: 0.3rem 1.4rem;
+  }
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -786,11 +1029,5 @@ section h3 {
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  .content-item {
-    margin-bottom: 0;
-  }
-}
-
 /* Large Devices, Desktops */
 /* Extra Large Devices, Wide Screens */
