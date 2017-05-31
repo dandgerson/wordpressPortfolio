@@ -1,4 +1,5 @@
 
 // example
+@include font-face("'FontAwesome'", "../fonts/FontAwesome/fontawesome-webfont", $file-formats: eot svg ttf woff);
 @include font-face("icomoon", "../fonts/linea/icomoon", $file-formats: eot svg ttf woff);
 
