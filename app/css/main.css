@@ -189,7 +189,9 @@ body {
 
 body img:focus,
 body a:focus,
-body input:focus {
+body input:focus,
+body button:focus,
+body textarea:focus {
   outline: none;
 }
 
@@ -770,6 +772,51 @@ section h3 {
 
 .main-footer .social-wrap a:hover {
   color: #FAFAFA;
+}
+
+.contact-box {
+  margin-bottom: 30px;
+}
+
+.contact-box h3 {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.contact-box p {
+  margin-top: 5px;
+}
+
+.contact-box .contacts-icon {
+  font-size: 2.5rem;
+}
+
+.main-form button {
+  border: none;
+  color: #fff;
+  line-height: 2rem;
+  padding: 0 25px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  line-height: 40px;
+  text-indent: 12px;
+  font-size: .9rem;
+  background-color: #FAFAFA;
 }
 
 /* --------------------------------------------------------

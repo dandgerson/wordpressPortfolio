@@ -15,8 +15,8 @@ $(document).ready(function () {
 	});
 
 // mixitup
-	var containerEl = document.querySelector('.p-container');
-	var mixer = mixitup(containerEl);
+var containerEl = document.querySelector('.p-container');
+var mixer = mixitup(containerEl);
 
 });
 
@@ -132,4 +132,7 @@ $(document).ready(function(){
 		$(this).find(".port-descr").attr("id", "work-" + i);
 	});
 
+	$("input, select, textarea").jqBootstrapValidation();
+
 });
+

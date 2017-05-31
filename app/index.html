@@ -40,15 +40,15 @@
 	<meta name="keywords" content="...">
 	<meta name="autor" content="dandgerson dandgerson@gmail.com">
 <!-- 
-                     Coded by 
-     _                 _                                 
-    | |               | |                                
-  __| | __ _ _ __   __| | __ _  ___ _ __ ___  ___  _ __  
+										 Coded by 
+		 _                 _                                 
+		| |               | |                                
+	__| | __ _ _ __   __| | __ _  ___ _ __ ___  ___  _ __  
  / _` |/ _` | '_ \ / _` |/ _` |/ _ \ '__/ __|/ _ \| '_ \ 
 | (_| | (_| | | | | (_| | (_| |  __/ |  \__ \ (_) | | | |
  \__,_|\__,_|_| |_|\__,_|\__, |\___|_|  |___/\___/|_| |_|
-                          __/ |                          
-                         |___/                           
+													__/ |                          
+												 |___/                           
 dandgerson@gmail.com, https://www.facebook.com/dandgerson
 -->
 <!-- Libs CSS -->
@@ -59,6 +59,7 @@ dandgerson@gmail.com, https://www.facebook.com/dandgerson
 
 <!-- Fonts -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 </head>
@@ -459,8 +460,77 @@ dandgerson@gmail.com, https://www.facebook.com/dandgerson
 				<div class="row">
 					<div class="col">
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur enim, minus sequi quos, fugit velit quibusdam qui, repudiandae et earum quisquam est reprehenderit reiciendis nesciunt quam natus veritatis iste soluta. Pariatur natus error commodi saepe. Libero sequi, officia modi. Rerum, laborum, accusantium est eius ratione debitis natus labore. Distinctio dolore nesciunt officiis, ex officia earum nulla facere molestiae molestias recusandae aut ea pariatur quam eveniet repellat labore illo, cumque laborum, odit fuga. Cupiditate eum, saepe hic dignissimos cum provident animi a doloremque quam, officia omnis delectus, fugit nemo, recusandae! Molestiae facere aliquam maxime aut odio unde culpa explicabo nostrum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur enim, minus sequi quos, fugit velit quibusdam qui, repudiandae et earum quisquam est reprehenderit reiciendis nesciunt quam natus veritatis iste soluta. Pariatur natus error commodi saepe. Libero sequi, officia modi. Rerum, laborum, accusantium est eius ratione debitis natus labore. Distinctio dolore nesciunt officiis, ex officia earum nulla facere molestiae molestias recusandae aut ea pariatur quam eveniet repellat labore illo, cumque laborum, odit fuga. Cupiditate eum, saepe hic dignissimos cum provident animi a doloremque quam, officia omnis delectus, fugit nemo, recusandae! Molestiae facere aliquam maxime aut odio unde culpa explicabo nostrum.</p>
+						<div class="contact-box">
+							<i class="contacts-icon icon-basic_geolocalize-01"></i>
+							<h3>Address</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.</p>
+						</div>
+						
+						<div class="contact-box">
+							<i class="contacts-icon icon-basic_smartphone"></i>
+							<h3>Telephone number</h3>
+							<p>+7 905 63 444 67</p>
+						</div>
+
+						<div class="contact-box">
+							<i class="contacts-icon icon-basic_webpage_img_txt"></i>
+							<h3>WEb-site</h3>
+							<p><a href="//dandgerson.com" target="_blank">dandgerson.com</a></p>
+						</div>
+
+					</div>
+
+					<div class="col">
+
+						<form action="https://formspree.io/dandgerson@gmail.com" class="main-form" novalidate method="POST" target="_blank">
+
+							<div class="control-group"> <!-- обязательно для валидатора -->
+								<label class="form-group control-label"> <!-- .control-label обязательно для валидатора -->
+									<span class="color-element">*</span>First name:
+									<div class="controls"> <!-- обязательно для валидатора -->
+									<input 
+									required
+									type="text" 
+									name="name" 
+									placeholder="First name"
+									data-validation-required-message="Input your name, please"/>
+									<p class="help-block text-danger"></p>
+									</div>
+								</label>
+							</div>
+
+							<div class="control-group">
+								<label class="form-group control-label">
+									<span class="color-element">*</span>Email:
+<div class="controls">
+									<input 
+									required
+									type="email" 
+									name="email" 
+									placeholder="Your Best email" 
+									data-validation-required-message="Input your email, please"
+									data-validation-email-message="Input a valid email address, please"/>
+									<p class="help-block text-danger"></p>
+									</div>
+								</label>
+							</div>
+
+							<div class="control-group">
+								<label class="form-group control-label">
+									<span class="color-element">*</span>Your message:
+									<div class="controls">
+									<textarea name="message" id="message" cols="30" rows="3"
+									placeholder="Type your message"
+									data-validation-required-message="Type your message, please"></textarea>
+									<p class="help-block text-danger"></p>
+									</div>
+								</label>
+							</div>
+							<div class="form-actions">
+								<button type="submit">Submit</button>
+							</div>
+						</form>
+
 					</div>
 				</div>
 			</div>
@@ -472,21 +542,21 @@ dandgerson@gmail.com, https://www.facebook.com/dandgerson
 			<div class="row">
 				<div class="col">
 					&copy; 2017 Dmitry Anderson <a href="#">(dandgerson)</a>
-					
+
 				</div>
 				<div class="col">
 					<div class="social-wrap">
-								<ul>
-									<li><a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-								</ul>
-							</div> <!-- .social-wrap -->
+						<ul>
+							<li><a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						</ul>
+					</div> <!-- .social-wrap -->
 				</div>
 			</div>
 		</div>
@@ -512,6 +582,11 @@ dandgerson@gmail.com, https://www.facebook.com/dandgerson
 	<!-- JS Plugins -->
 	<script src="js/libs.min.js"></script>
 	<script src="js/animate-css-rafail.js"></script>
+	<script src="js/jqBootstrapValidation.js"></script>
+	<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+	
+
+
 	<!-- <script src="js/parallax.min.js"></script> -->
 
 	<!-- Custom JS -->
