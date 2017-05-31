@@ -40,7 +40,8 @@ gulp.task('scripts', function() {
 		'app/bower/mixitup/dist/mixitup.min.js',
 		'app/bower/parallax.js/parallax.min.js',
 		'app/bower/respond/dest/respond.min.js',
-		'app/bower/waypoints/lib/jquery.waypoints.min.js'
+		'app/bower/waypoints/lib/jquery.waypoints.min.js',
+		'app/bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js'
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

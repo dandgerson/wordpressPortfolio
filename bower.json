@@ -25,6 +25,7 @@
     "animate.css": "^3.5.2",
     "mixitup": "^3.1.11",
     "parallax.js": "^1.4.2",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "page-scroll-to-id": "^1.5.8"
   }
 }

@@ -134,5 +134,8 @@ $(document).ready(function(){
 
 	$("input, select, textarea").jqBootstrapValidation();
 
+	 $(".top-menu ul a").mPageScroll2id();
+	 
+
 });
 
