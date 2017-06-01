@@ -1,42 +1,10 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
-body {
-	overflow-x: hidden;
-	img,
-	a,
-	input,
-	button,
-	textarea {
-		&:focus {
-			outline: none;	
-		}
-	}
-}
 
-.hidden {
-	display: none;
-}
+/* header */
 
 section, .main-head {
 	position: relative;
-}
-
-section {
-	padding: 70px 0 90px;
-	h2 {
-		text-align: center;
-		font-size: 2rem;
-		text-transform: uppercase;
-		margin: 0 0 15px;
-	}
-	h3 {
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 12px;
-		margin-top: 0;
-		margin-bottom: 35px;
-	}
 }
 
 .s-descr-wrap {
@@ -65,36 +33,6 @@ section {
 
 }
 
-.loader {
-	background: none repeat scroll 0 0 #ffffff;
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-	display:flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	.loader-inner {
-		background-image: url("../img/preloader.gif");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-color: #fff;
-		height: 120px;
-		width: 120px;
-		// margin-top: -30px;
-		// margin-left: -30px;
-		// left: 47%;
-		// top: 40%;
-		// position: absolute;
-	}
-}
-
 .logo-container {
 	height: 120px;
 	position: absolute;
@@ -108,7 +46,6 @@ section {
 	}
 }
 
-// sandwich
 
 .toggle-menu {
 	display: flex;
@@ -123,63 +60,6 @@ section {
 	height: 55px;
 	background-color: rgba(0,0,0,0.2);
 	border-radius: 10px;
-}
-
-$sandwich-w: 50px;
-$sandwich-h: 5px;
-
-.sandwich {
-	width: 50px;
-	height: 35px;
-}
-
-.sw-topper {
-	position: relative;
-	top: $sandwich-h * 0;
-	width: $sandwich-w;
-	height: $sandwich-h;
-	border: none;
-	border-radius: 4px 4px 4px 4px;
-	transition: transform 0.5s, top 0.2s;
-	transition-delay: 0.2s, 0s;
-}
-
-.sw-bottom {
-	position: relative;
-	width: $sandwich-w;
-	height: $sandwich-h;
-	top: $sandwich-h * 2;
-	border: none;
-	border-radius: 4px 4px 4px 4px;
-	transition: transform 0.5s, top 0.2s;
-	transition-delay: 0.2s, 0s;
-}
-
-.sw-footer {
-	position: relative;
-	width: $sandwich-w;
-	height: $sandwich-h;
-	top: $sandwich-h * 4;
-	border: none;
-	border-radius: 4px 4px 4px 4px;
-	transition: all 0.5s;
-	transition-delay: 0.1s;
-}
-
-.sandwich.active .sw-topper {
-	top: 15px;
-	transform: rotate(140deg);
-}
-
-.sandwich.active .sw-bottom {
-	top: 10px;
-	transform: rotate(-140deg);
-}
-
-.sandwich.active .sw-footer {
-	opacity: 0;
-	top: 0;
-	transform: rotate(180deg);
 }
 
 .top-menu {
@@ -270,11 +150,7 @@ $sandwich-h: 5px;
 	transition: all .5s;
 }
 
-.main-footer {
-	padding: 50px 0;
-	font-size: .9rem;
-
-}
+/* section about */
 
 .content-item {
 	margin-bottom: 60px;
@@ -331,8 +207,16 @@ $sandwich-h: 5px;
 			padding: 0 3px;
 			margin: 0;
 		}
+		a {
+			&:hover {
+				color: $main-color;
+				transition: .3s;
+			}
+		}
 	}
 }
+
+/* section resume */
 
 .resume-container {
 	h3 {
@@ -388,6 +272,8 @@ $sandwich-h: 5px;
 		}
 	}
 }
+
+/* section portfolio */
 
 .s-portfolio {
 	ul,
@@ -497,10 +383,13 @@ $sandwich-h: 5px;
 			display: block;
 			&:hover {
 				color: $bg-light;
+				transition: .3s;
 			}
 		}
 	}
 }
+
+/* section contacts */
 
 .contact-box {
 	margin-bottom: 30px;
@@ -528,6 +417,11 @@ $sandwich-h: 5px;
 		font-size: 0.9rem;
 		text-transform: uppercase;
 		// float: right;
+		&:hover {
+			cursor: pointer;
+			background-color: darken($color, 30%);
+			transition: .9s;
+		}
 	}
 }
 
@@ -546,3 +440,10 @@ $sandwich-h: 5px;
 	}
 }
 
+/* section footer */
+
+.main-footer {
+	padding: 50px 0;
+	font-size: .9rem;
+
+}

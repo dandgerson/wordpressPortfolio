@@ -24,6 +24,42 @@
 /* --------------------------------------------------------
 	_settings.scss
 	-------------------------------------------------------- */
+body {
+  overflow-x: hidden;
+}
+
+body img:focus,
+body a:focus,
+body input:focus,
+body button:focus,
+body textarea:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 70px 0 90px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
 /* --------------------------------------------------------
 	Theme
 	-------------------------------------------------------- */
@@ -181,75 +217,8 @@ svg path {
 }
 
 /* --------------------------------------------------------
-	_base.scss
+	_components.scss
 	-------------------------------------------------------- */
-body {
-  overflow-x: hidden;
-}
-
-body img:focus,
-body a:focus,
-body input:focus,
-body button:focus,
-body textarea:focus {
-  outline: none;
-}
-
-.hidden {
-  display: none;
-}
-
-section, .main-head {
-  position: relative;
-}
-
-section {
-  padding: 70px 0 90px;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0 0 15px;
-}
-
-section h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-
-.s-descr-wrap {
-  text-align: center;
-}
-
-.s-descr-wrap .s-descr {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-bottom: 130px;
-}
-
-.s-descr-wrap .s-descr::after {
-  content: "";
-  height: 1px;
-  left: 50%;
-  margin-left: -75px;
-  margin-top: 60px;
-  position: absolute;
-  width: 150px;
-}
-
-.main-head {
-  min-height: 620px;
-  background: transparent;
-  padding-top: 20px;
-}
-
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -287,49 +256,6 @@ section h3 {
   background-color: #fff;
   height: 120px;
   width: 120px;
-}
-
-.logo-container {
-  height: 120px;
-  position: absolute;
-  left: 20px;
-  top: 28px;
-  z-index: 100;
-}
-
-.logo-container svg {
-  height: 120px;
-  width: 120px;
-  z-index: 100;
-}
-
-.toggle-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  right: 20px;
-  top: 40px;
-  z-index: 100;
-  width: 60px;
-  height: 55px;
-  background-color: rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
 }
 
 .sandwich {
@@ -403,6 +329,84 @@ section h3 {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+/* --------------------------------------------------------
+	_base.scss
+	-------------------------------------------------------- */
+/* header */
+section, .main-head {
+  position: relative;
+}
+
+.s-descr-wrap {
+  text-align: center;
+}
+
+.s-descr-wrap .s-descr {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 130px;
+}
+
+.s-descr-wrap .s-descr::after {
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: 60px;
+  position: absolute;
+  width: 150px;
+}
+
+.main-head {
+  min-height: 620px;
+  background: transparent;
+  padding-top: 20px;
+}
+
+.logo-container {
+  height: 120px;
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  z-index: 100;
+}
+
+.logo-container svg {
+  height: 120px;
+  width: 120px;
+  z-index: 100;
+}
+
+.toggle-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  z-index: 100;
+  width: 60px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .top-menu {
@@ -523,11 +527,7 @@ section h3 {
   transition: all .5s;
 }
 
-.main-footer {
-  padding: 50px 0;
-  font-size: .9rem;
-}
-
+/* section about */
 .content-item {
   margin-bottom: 60px;
 }
@@ -587,6 +587,13 @@ section h3 {
   margin: 0;
 }
 
+.social-wrap ul a:hover {
+  color: #222;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* section resume */
 .resume-container h3 {
   margin-top: 30px;
 }
@@ -650,6 +657,7 @@ section h3 {
   text-transform: uppercase;
 }
 
+/* section portfolio */
 .s-portfolio ul,
 .s-portfolio li {
   list-style: none;
@@ -772,8 +780,11 @@ section h3 {
 
 .main-footer .social-wrap a:hover {
   color: #FAFAFA;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
+/* section contacts */
 .contact-box {
   margin-bottom: 30px;
 }
@@ -803,6 +814,13 @@ section h3 {
   text-transform: uppercase;
 }
 
+.main-form button:hover {
+  cursor: pointer;
+  background-color: #ad1a00;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
 .form-group {
   display: block;
   margin-bottom: 20px;
@@ -817,6 +835,12 @@ section h3 {
   text-indent: 12px;
   font-size: .9rem;
   background-color: #FAFAFA;
+}
+
+/* section footer */
+.main-footer {
+  padding: 50px 0;
+  font-size: .9rem;
 }
 
 /* --------------------------------------------------------
