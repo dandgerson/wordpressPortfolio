@@ -502,14 +502,15 @@ section, .main-head {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  overflow-y: hidden;
 }
 
 .top-text {
   display: inline-block;
   margin-right: 20px;
   margin-left: 20px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
-          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 900px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 3000px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 3000px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 

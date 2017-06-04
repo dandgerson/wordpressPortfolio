@@ -75,16 +75,16 @@ $(document).ready(function () {
 	// sandwich
 
 	$(".sandwich").click(function() {
-        if (!$(".top-menu").is(":visible")) {
-            $(".top-text").addClass("h-opacify");
-            $(".top-menu").fadeIn(600);
-            $(".top-menu li a").addClass("fadeInUp animated");
-        } else {
-            $(".top-text").removeClass("h-opacify");
-            $(".top-menu").fadeOut(600);
-            $(".top-menu li a").removeClass("fadeInUp animated");
-        }
-    });
+				if (!$(".top-menu").is(":visible")) {
+						$(".top-text").addClass("h-opacify");
+						$(".top-menu").fadeIn(600);
+						$(".top-menu li a").addClass("fadeInUp animated");
+				} else {
+						$(".top-text").removeClass("h-opacify");
+						$(".top-menu").fadeOut(600);
+						$(".top-menu li a").removeClass("fadeInUp animated");
+				}
+		});
 
 	$(".top-menu ul a").click(function() {
 		$(".top-text").removeClass("h-opacify");
