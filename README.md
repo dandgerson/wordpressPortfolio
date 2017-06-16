@@ -1,1 +1,1 @@
-## Wordpress portfolio by lesson Webdesign master
+## Wordpress portfolio
